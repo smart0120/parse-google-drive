@@ -33,4 +33,5 @@ python main.py
 ## PyDrive Library
 
 - https://pythonhosted.org/PyDrive/
+- https://pythonhosted.org/PyDrive/quickstart.html (Authentication)
 
