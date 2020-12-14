@@ -22,9 +22,13 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-##### 4. Create .env from .env.example and fill in proper values
+##### 4. Create .env from .env.example and fill in Folders on Google Drive and DB settings
 
-##### 5. Run script
+
+##### 5. Download credentials from API Console and move it to **client_secrets.json** in project directory
+
+
+##### 6. Run script
 ```bash
 python main.py
 ```
@@ -35,3 +39,6 @@ python main.py
 - https://pythonhosted.org/PyDrive/
 - https://pythonhosted.org/PyDrive/quickstart.html (Authentication)
 
+## pyodbc Library
+
+- https://pypi.org/project/pyodbc/
