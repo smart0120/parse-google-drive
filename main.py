@@ -59,8 +59,8 @@ def main():
 
     # Check if Table exist on Database
     query = f"IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE' \
-                AND TABLE_NAME='{table_name}') SELECT 1 AS res ELSE SELECT 0 AS res"
-    result = cursor.execute(query)
+                AND TABLE_NAME=?) SELECT 1 AS res ELSE SELECT 0 AS res"
+    result = cursor.execute(query, (table_name, ))
     if (result.fetchall()[0][0] == 0):
         query = f"CREATE TABLE {table_name} (\
             id nvarchar(100) NOT NULL,\
